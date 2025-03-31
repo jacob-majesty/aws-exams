@@ -18,7 +18,8 @@ Anyone preparing for AWS certifications, from beginners to experienced professio
 
 🔗 **Resources:**  
 - [AWS Certification Official Site](https://aws.amazon.com/certification/)  
-- [AWS Free Tier for Practice](https://aws.amazon.com/free/)  
+- [AWS Free Tier for Practice](https://aws.amazon.com/free/)
+- [Free exam topics](https://www.examtopics.com/exams/amazon/aws-certified-cloud-practitioner/)
 
 🛠 **Contributions:**  
 Feel free to contribute by adding study materials, practice questions, or corrections! 🚀  
