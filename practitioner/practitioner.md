@@ -1,152 +1,149 @@
+### **AWS Cloud Computing Cheat Sheet – Quick Learning Bullet Points**  
 
+#### **1. Cloud Computing & Types**  
+- **Cloud Computing**: On-demand access to computing resources over the internet.  
+- **Types**:  
+  - **IaaS** (Infrastructure as a Service) – Compute, storage, networking (e.g., AWS EC2).  
+  - **PaaS** (Platform as a Service) – Managed runtime environments (e.g., AWS Elastic Beanstalk).  
+  - **SaaS** (Software as a Service) – Fully managed applications (e.g., Gmail, Dropbox).  
+
+#### **2. Shared Responsibility Model**  
+- **AWS**: Secures the cloud infrastructure (hardware, networking, data centers).  
+- **Customer**: Secures data, applications, OS configurations, and access management.  
+
+#### **3. IAM (Identity and Access Management)**  
+- **Users, Groups, Policies**:  
+  - **Users** – Individual accounts.  
+  - **Groups** – Collection of users with shared permissions.  
+  - **Policies** – JSON documents defining access rules.  
+  - **IAM Roles** – Temporary permissions for AWS services.  
+
+#### **4. Compute Services**  
+- **EC2 (Elastic Compute Cloud)** – Virtual servers with flexible configurations.  
+- **EBS (Elastic Block Store)** – Persistent storage for EC2 instances.  
+- **EFS (Elastic File System)** – Scalable shared storage for multiple instances.  
+- **ELB (Elastic Load Balancer)** – Distributes traffic across instances.  
+  - **ALB (Application Load Balancer)** – Layer 7 routing.  
+  - **NLB (Network Load Balancer)** – Layer 4 performance.  
+  - **ASG (Auto Scaling Group)** – Adjusts EC2 instances based on demand.  
+
+#### **5. Storage & Data Transfer**  
+- **S3 (Simple Storage Service)** – Object storage with high durability.  
+  - Policies & Encryption: S3 bucket policies, IAM policies, SSE encryption options.  
+- **AWS Snow Family** – Data transfer appliances for offline migrations.  
+  - **Snowball Edge** – Storage & compute processing.  
+  - **Storage Gateway** – Hybrid cloud storage integration.  
+
+#### **6. Databases & Analytics**  
+- **RDS** – Managed relational databases (MySQL, PostgreSQL, etc.).  
+- **ElastiCache** – In-memory caching (Redis, Memcached).  
+- **DynamoDB** – NoSQL key-value database.  
+- **Redshift** – Data warehouse for analytics.  
+- **EMR (Elastic MapReduce)** – Big data processing with Hadoop & Spark.  
+- **Athena** – Query S3 data using SQL.  
+- **DocumentDB** – Managed MongoDB-compatible NoSQL.  
+- **Neptune** – Managed graph database.  
+- **Timestream** – Time-series database.  
+- **QLDB** – Immutable ledger database.  
+- **Managed Blockchain** – Create & manage blockchain networks.  
+- **Glue** – ETL service for data integration.  
+- **DMS (Database Migration Service)** – Migrate databases to AWS.  
+
+#### **7. Containers & Serverless**  
+- **ECS (Elastic Container Service)** – Docker container orchestration.  
+- **Fargate** – Serverless compute for containers.  
+- **ECR (Elastic Container Registry)** – Docker image repository.  
+- **Amazon EKS (Elastic Kubernetes Service)** – Managed Kubernetes.  
+- **Lambda** – Serverless compute (event-driven).  
+- **API Gateway** – Manage & secure APIs.  
+- **Batch** – Process batch computing workloads.  
+- **Lightsail** – Simple cloud hosting for small applications.  
+
+#### **8. DevOps & Infrastructure as Code**  
+- **CloudFormation** – Infrastructure as code (YAML/JSON).  
+- **CDK (Cloud Development Kit)** – Programmatic IaC using TypeScript/Python.  
+- **Elastic Beanstalk** – PaaS for deploying applications.  
+- **CodeDeploy** – Automate deployments.  
+- **CodeCommit** – Managed Git repository.  
+- **CodeBuild** – Continuous integration.  
+- **CodePipeline** – CI/CD workflow automation.  
+- **CodeArtifact** – Managed package repository.  
+- **SSM (AWS Systems Manager)** – Fleet management & automation.  
+
+#### **9. Global Applications & Networking**  
+- **Route 53** – Scalable DNS & domain management.  
+- **CloudFront** – CDN for content delivery.  
+- **S3 Transfer Acceleration** – Faster global S3 uploads.  
+- **AWS Outposts** – Extend AWS infrastructure on-premises.  
+- **AWS WaveLength** – Low-latency apps at telco edge.  
+- **AWS Local Zones** – Deploy apps closer to users.  
+
+#### **10. Messaging & Streaming**  
+- **SQS (Simple Queue Service)** – Message queuing.  
+- **SNS (Simple Notification Service)** – Push notifications.  
+- **Kinesis** – Real-time data streaming.  
+- **Amazon MQ** – Managed message broker service.  
+
+#### **11. Monitoring & Logging**  
+- **CloudWatch Metrics** – Collect & monitor AWS resource metrics.  
+- **CloudWatch Logs** – Store & analyze logs.  
+- **EventBridge** – Serverless event bus.  
+- **CloudTrail** – Logs AWS API activity.  
+- **X-Ray** – Distributed tracing for applications.  
+- **CodeGuru** – AI-powered code review & performance insights.  
+- **AWS Health** – Service status & operational health monitoring.  
+
+#### **12. Networking & Security**  
+- **VPC (Virtual Private Cloud)** – Isolated network for AWS resources.  
+- **Subnets** – Public/private subnet separation.  
+- **Internet Gateway** – Allows public internet access.  
+- **NAT Gateway** – Enables outbound internet for private subnets.  
+- **VPC Flow Logs** – Capture network traffic logs.  
+- **VPC Peering** – Connect VPCs privately.  
+- **VPC Endpoints** – Private connection to AWS services.  
+- **PrivateLink** – Secure internal service access.  
+- **Client VPN & Transit Gateway** – VPN & multi-VPC networking.  
+
+#### **13. Security & Compliance**  
+- **DDoS Protection**:  
+  - **WAF (Web Application Firewall)** – Blocks malicious traffic.  
+  - **AWS Shield** – DDoS protection.  
+- **AWS Network Firewall** – Managed firewall service.  
+- **Encryption & Key Management**:  
+  - **KMS (Key Management Service)** – Manage encryption keys.  
+  - **CloudHSM** – Hardware security module for encryption.  
+- **Certificate & Secret Management**:  
+  - **AWS Certificate Manager (ACM)** – Manage SSL/TLS certificates.  
+  - **Secrets Manager** – Store & retrieve secrets securely.  
+- **Security Monitoring**:  
+  - **GuardDuty** – Threat detection & monitoring.  
+  - **Inspector** – Automated security assessment.  
+  - **Config** – Compliance tracking for AWS resources.  
+  - **Macie** – Data security & sensitive data discovery.  
+  - **Security Hub** – Centralized security compliance.  
+- **IAM Access Analyzer** – Detects overly permissive policies.  
+
+#### **14. AI & Machine Learning**  
+- **Rekognition** – Image & video analysis.  
+- **Transcribe** – Speech-to-text service.  
+- **Polly** – Text-to-speech service.  
+- **Lex** – Chatbot & conversational AI.  
+- **Comprehend** – NLP (Natural Language Processing).  
+- **SageMaker** – Build & deploy ML models.  
+- **Kendra** – AI-powered enterprise search.  
+- **Personalize** – Recommendation engine.  
+- **Textract** – OCR & document analysis.  
+
+#### **15. AWS Organizations & Cost Management**  
+- **AWS Organizations** – Manage multiple AWS accounts.  
+- **Consolidated Billing** – Unified billing for multiple accounts.  
+- **AWS Control Tower** – Set up & govern multi-account AWS environments.  
+- **AWS Service Catalog** – Manage approved AWS service configurations.  
+- **Pricing Models** – On-demand, reserved, spot instances, savings plans.  
+- **AWS Compute Optimizer** – Cost & performance recommendations.  
+- **Billing & Costing Tools** – AWS Cost Explorer, Budgets, Trusted Advisor.  
+- **Service Quotas** – Track AWS service limits.  
+- **AWS Support Plans** – Basic, Developer, Business, Enterprise.  
 
 ---
-
-## **Cloud Concepts: Understanding of Cloud Computing & AWS's Value Proposition**  
-
-### **1. What are the key benefits of cloud computing?**  
-**Answer:**  
-- **Pay-as-you-go** pricing (no upfront costs).  
-- **Scalability** (scale up or down as needed).  
-- **High availability** (global infrastructure).  
-- **Elasticity** (automated scaling).  
-- **Security** (built-in compliance and encryption).  
-- **Reduced management effort** (managed services).  
-
-### **2. What are the three types of cloud computing models?**  
-**Answer:**  
-1. **IaaS (Infrastructure as a Service)** – AWS EC2, S3, VPC (provides virtual servers and storage).  
-2. **PaaS (Platform as a Service)** – AWS Elastic Beanstalk (simplifies application deployment).  
-3. **SaaS (Software as a Service)** – AWS WorkSpaces, Gmail (software provided over the internet).  
-
-### **3. What are the main types of cloud computing deployments?**  
-**Answer:**  
-1. **Public Cloud** – Resources owned by AWS, shared across customers.  
-2. **Private Cloud** – Dedicated cloud infrastructure for a single organization.  
-3. **Hybrid Cloud** – Combination of public and private cloud.  
-
-### **4. What is AWS’s value proposition?**  
-**Answer:**  
-AWS offers **scalability, flexibility, cost-efficiency, security, and global reach** with a pay-as-you-go pricing model.  
-
----
-
-## **Security & Compliance: Basics of AWS Security, Privacy, and Compliance**  
-
-### **5. What is the AWS Shared Responsibility Model?**  
-**Answer:**  
-- **AWS is responsible for:** Security **of** the cloud (infrastructure, hardware, and networking).  
-- **Customers are responsible for:** Security **in** the cloud (data, applications, IAM configurations).  
-
-### **6. What is IAM (Identity and Access Management)?**  
-**Answer:**  
-IAM allows you to manage **users, roles, and permissions** for AWS services.  
-
-### **7. What are IAM policies and IAM roles?**  
-**Answer:**  
-- **IAM Policies**: Define permissions for users and resources (JSON format).  
-- **IAM Roles**: Assign temporary permissions to AWS services and users.  
-
-### **8. How does AWS protect data in transit and at rest?**  
-**Answer:**  
-- **At rest**: Encryption with AWS KMS, S3 SSE, EBS encryption.  
-- **In transit**: SSL/TLS encryption.  
-
-### **9. What is AWS Shield?**  
-**Answer:**  
-AWS Shield is a **DDoS protection service** that secures AWS resources from attacks.  
-
-### **10. What AWS service helps with compliance and audits?**  
-**Answer:**  
-AWS **Artifact** provides compliance reports and documentation.  
-
----
-
-## **Technology: Overview of AWS Cloud Services and Their Application**  
-
-### **11. What AWS service provides scalable object storage?**  
-**Answer:**  
-Amazon **S3** (Simple Storage Service).  
-
-### **12. What AWS service is used for running containers without managing servers?**  
-**Answer:**  
-AWS **Fargate** (serverless container service).  
-
-### **13. What is the difference between Amazon RDS and DynamoDB?**  
-**Answer:**  
-- **RDS**: Managed relational database (SQL-based).  
-- **DynamoDB**: Managed NoSQL database for key-value storage.  
-
-### **14. What AWS service enables global content delivery with caching?**  
-**Answer:**  
-Amazon **CloudFront** (Content Delivery Network).  
-
-### **15. What service allows you to monitor AWS resources in real time?**  
-**Answer:**  
-Amazon **CloudWatch** (logs, metrics, and alarms).  
-
-### **16. What service helps track API activity across AWS?**  
-**Answer:**  
-AWS **CloudTrail** (logs AWS API calls).  
-
-### **17. What is AWS Auto Scaling?**  
-**Answer:**  
-AWS Auto Scaling automatically adjusts the number of running instances based on demand.  
-
-### **18. What is Amazon VPC?**  
-**Answer:**  
-Amazon Virtual Private Cloud (VPC) allows you to **create isolated networks** in AWS.  
-
----
-
-## **Billing & Pricing: Understanding AWS Pricing Models & Cost Optimization**  
-
-### **19. What are the different AWS pricing models?**  
-**Answer:**  
-1. **On-Demand** – Pay per usage, no upfront cost.  
-2. **Reserved Instances** – Up to **75% discount** for long-term commitments.  
-3. **Spot Instances** – **Up to 90% discount**, but can be interrupted.  
-4. **Savings Plans** – Flexible pricing commitment for reduced costs.  
-5. **Free Tier** – Limited free access to AWS services.  
-
-### **20. How does AWS charge for EC2 instances?**  
-**Answer:**  
-Charges are based on:  
-- **Compute time** (per second or per hour).  
-- **Instance type** (CPU, memory).  
-- **Storage (EBS), data transfer, and networking**.  
-
-### **21. What AWS tool helps estimate costs before deploying resources?**  
-**Answer:**  
-**AWS Pricing Calculator**.  
-
-### **22. What service can help track and optimize AWS costs?**  
-**Answer:**  
-1. **AWS Cost Explorer** – Analyzes and visualizes AWS costs.  
-2. **AWS Budgets** – Sets cost and usage alerts.  
-
-### **23. What is the AWS Free Tier?**  
-**Answer:**  
-AWS Free Tier provides limited **free usage** of AWS services for **12 months** (e.g., 750 hours/month EC2, 5 GB S3).  
-
-### **24. How can you reduce AWS costs?**  
-**Answer:**  
-- **Use Reserved or Spot Instances** instead of On-Demand.  
-- **Enable Auto Scaling** to avoid over-provisioning.  
-- **Use S3 lifecycle policies** to move data to Glacier.  
-- **Monitor usage with AWS Cost Explorer and Budgets**.  
-
-### **25. What AWS service provides detailed billing reports?**  
-**Answer:**  
-AWS **Cost and Usage Report**.  
-
----
-
-## **Final Tips to Succeed in the Exam**  
-✅ **Understand key AWS services and pricing models.**  
-✅ **Practice with AWS Free Tier.**  
-✅ **Use AWS Whitepapers and FAQs.**  
-✅ **Take practice tests to familiarize yourself with question formats.**  
-✅ **Memorize the AWS Shared Responsibility Model and pricing principles.**  
-✅ **Use elimination techniques on tricky questions.**  
 
