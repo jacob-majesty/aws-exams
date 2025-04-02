@@ -17,7 +17,8 @@ This repository is dedicated to helping candidates prepare for AWS certification
 Anyone preparing for AWS certifications, from beginners to experienced professionals looking to validate their cloud expertise.  
 
 🔗 **Resources:**  
-- [AWS Certification Official Site](https://aws.amazon.com/certification/)  
+- [AWS Certification Official Site](https://aws.amazon.com/certification/)
+- [AWS Documentation](https://docs.aws.amazon.com)
 - [AWS Free Tier for Practice](https://aws.amazon.com/free/)
 - [ExamPro](https://www.exampro.co/clf-c02)
 - [Free exam topics](https://www.examtopics.com/exams/amazon/aws-certified-cloud-practitioner/)
